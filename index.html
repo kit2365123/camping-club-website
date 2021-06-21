@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="top-container">
+    <div class="container">
+        <header>
+            <a href="index.html"><img src="images/logo.svg" alt="let's camp logo" class="logo" ></a>
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/menu-icon.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit menu"></li>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="gallery.html">gallery</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </nav>
+        </header> 
+        <div class="title">
+            <h1>Camping club in Hong Kong</h1>
+            <p class="subhead">Join us to enjoy camping.</p>
+        </div>
+        <img src="images/arrow.svg" alt="scroll down" class="scroll">
+    </div>
+</div>
+
+<div class="images-container">
+    <div class="container">
+        <ul>
+            <li>
+                <img src="images/image1.jpg" alt="image1">
+                <div class="text-container">
+                    <h2>Camping over the world</h2>
+                    <p>We have camping activities all over the world. If you like travel to different places, you cannot miss it.</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/image2.jpg" alt="image2">
+                <div class="text-container">
+                    <h2>Meeting new friends</h2>
+                    <p>We have over a hundred of club member currently and you can easily meet new friends from our different camping activities. You will never be alone!</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/image3.jpg" alt="image3">
+                <div class="text-container">
+                    <h2>Enjoy the natural</h2>
+                    <p>Camping is a good chance for you to relax and away from the hustle and bustle from your daily life. Join us and enjoy the natural!</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="green-container">
+    <div class="container">
+        <h3>Comments from our club members</h3>
+        <ul>
+            <li>
+                <figure>
+                    <img src="images/user1.png" alt="User testimonial picture">
+                    <div class="text-container">
+                        <blockquote>"I love camping with friends. After I joined this club, 
+                            I never felt alone anymore. Here always have people will camping with you."</blockquote>
+                        <p>- Jane Doe</p>
+                    </div>
+               </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/user2.png" alt="User testimonial picture">
+                    <div class="text-container">
+                        <blockquote>"I have a lot of fun after joining this club. 
+                            People are so nice here, and we went to different places all over the world.
+                            Just fun to camping in different places"</blockquote>
+                        <p>- David</p>
+                    </div>
+               </figure>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Join us now!</h2>
+    <a href="contact.html" class="cta">Email Us</a>
+</div>
+
+<footer>
+    <div class="footer-container">
+        <div class="container">
+            <a href="#">
+                <img src="images/logo.svg" class="logo" alt="logo">
+            </a>
+            <ul class="footer-links">
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <ul class="outside-link">
+                <li><a href="https://www.facebook.com/groups/1804333776460185" target="_blank"><img src="images/facebook.svg" alt="facebook"></a></li>
+                <li><a href="https://twitter.com/CampAndCaravan" target="_blank"><img src="images/twitter.svg" alt="twitter"></a></li>
+                <li><a href="https://www.youtube.com/user/nagualero" target="_blank"><img src="images/youtube.svg" alt="youtube"></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+<script>
+
+    var menu = document.getElementById('menu');
+    var nav = document.getElementById('nav');
+    var exit = document.getElementById('exit');
+
+    menu.addEventListener('click', function(e) {
+        nav.classList.toggle('hide-mobile');
+        e.preventDefault();
+    });
+
+    exit.addEventListener('click', function(e) {
+        nav.classList.add('hide-mobile');
+        e.preventDefault();
+    });
+
+
+</script>
+
+
+</body>
+</html>
